@@ -30,7 +30,7 @@ function OneDigitRightButWrongPlace(checkValue, allCombinations, numberOfTestDig
                 numberOfEqualPositions.push(checkValue[i]);
             }
         }
-        // Check if matching items is number of test digits
+        // Check if matching items is equal to number of test digits
         const numberOfOneMatches = numberOfMatches.length === numberOfTestDigits;
 
         // Check if number of matching position is 0
@@ -55,10 +55,10 @@ function OneDigitRightAndRightPlace(checkValue, allCombinations, numberOfTestDig
                 numberOfEqualPositions.push(checkValue[i]);
             }
         }
-        // Check if matching items is number of test digits
+        // Check if matching items is equal to number of test digits
         const numberOfOneMatches = numberOfMatches.length === numberOfTestDigits;
 
-        // Check if number of matching position is numberOfTestDigits
+        // Check if number of matching position is equal to numberOfTestDigits
         const oneEqualPosition = numberOfEqualPositions.length === numberOfTestDigits;
         return (numberOfOneMatches && oneEqualPosition);
     })
@@ -79,7 +79,7 @@ function TwoDigitsCorrectButWrongPlace(checkValue, allCombinations, numberOfTest
                 numberOfEqualPositions.push(checkValue[i]);
             }
         }
-        // Check if matching items is number of test digits
+        // Check if matching items is equal to number of test digits
         const numberOfOneMatches = numberOfMatches.length === numberOfTestDigits;
 
         // Check if number of matching position is 0
